@@ -1,0 +1,149 @@
+:root {
+    --bg-dark: hsl(0, 0%, 0%);
+    --bg: hsl(0, 0%, 5%);
+    --bg-light: hsl(0, 0%, 10%);
+    --bg-lighter: hsl(0, 0%, 15%);
+    --border: hsl(0, 0%, 30%);
+    --highlight: hsl(0, 0%, 40%);
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+    --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+
+    --text: hsl(0, 0%, 95%);
+    --text-muted: hsl(0, 0%, 70%);
+
+    --primary-act: hsl(208 50.7% 50.5%);
+}
+
+body {
+    margin: 0;
+    padding: 50px;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: var(--border);
+}
+
+#welcome{
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+button{
+    user-select: none;
+    color: var(--text);
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flex-container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-cards {
+    width: 320px;
+    height: 580px;
+    margin: 20px;
+    padding: 20px;
+    background-image: var(--gradient);
+    font-size: 16px;
+    border-radius: 40px;
+    border: 1px solid;
+    border-color: var(--border);
+    border-top-color: var(--highlight);
+}
+.dashboard-cards:hover {
+    background-image: var(--gradient-hover);
+}
+
+.dashboard-cards p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.dashboard-cards button {
+    min-height: 50px;
+    min-width: 140px;
+    max-width: 140px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: var(--primary-act);
+}
+
+.dashboard-cards button:hover {
+    background-color: var(--primary-act) ;
+}
+
+.dashboard-cards button:active {
+    background-color: none;
+    background-image: var(--gradient-hover);
+}
+
+header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 40px;
+    background-image: var(--gradient-hover);
+    border: 1px solid;
+    border-color: var(--border);
+    border-top-color: var(--highlight);
+}
+
+header h1 {
+    margin-bottom: 0px ;
+}
+
+header p {
+    color: var(--text-muted);
+}
+
+header span {
+    color: var(--primary-act);
+}
+
+.header-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.header-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}
+
+header button {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+}
+
+#sub {
+    background-color: var(--primary-act);
+}
+
+#sub:hover{
+    border: 2px solid;
+    border-color: var(--primary-act);
+    background-image: var(--gradient-hover);
+}
+
+#logout {
+    border: 1px solid;
+    background-image: var(--gradient);
+}
+
+#logout:hover {
+    background-image: var(--gradient-hover);
+}
