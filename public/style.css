@@ -37,6 +37,10 @@ button{
     cursor: pointer;
 }
 
+button:active {
+    transform: scale(1.05);
+}
+
 .flex-container {
     min-height: 400px;
     display: flex;
@@ -95,6 +99,7 @@ header {
     border: 1px solid;
     border-color: var(--border);
     border-top-color: var(--highlight);
+    z-index: 999;
 }
 
 header h1 {
@@ -145,5 +150,26 @@ header button {
 }
 
 #logout:hover {
-    background-image: var(--gradient-hover);
+    border-color: var(--primary-act);
+}
+
+.popup {
+    background-image: var(--gradient);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup.open {
+    opacity: 1;
+    z-index: 998;
 }
