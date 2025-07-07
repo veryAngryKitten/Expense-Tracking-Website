@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.post('/deposit', (req, res) => {
     console.log(req.body)
-    res.render("dashboard")
+    res.redirect('/')
 })
 
 app.listen(3000)

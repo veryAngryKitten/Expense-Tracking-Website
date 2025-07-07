@@ -11,7 +11,7 @@
     --text: hsl(0, 0%, 95%);
     --text-muted: hsl(0, 0%, 70%);
 
-    --primary-act: hsl(208 50.7% 50.5%);
+    --primary-act: hsl(203, 47%, 52%);
 }
 
 body {
@@ -99,7 +99,6 @@ header {
     border: 1px solid;
     border-color: var(--border);
     border-top-color: var(--highlight);
-    z-index: 999;
 }
 
 header h1 {
@@ -172,4 +171,18 @@ header button {
 .popup.open {
     opacity: 1;
     z-index: 998;
+}
+
+.popup-inner{
+    width: 320px;
+    height: 220px;
+    margin: 20px;
+    padding: 20px;
+    background-image: var(--gradient-hover);
+    font-size: 16px;
+    border-radius: 40px;
+    border: 1px solid;
+    border-color: var(--border);
+    border-top-color: var(--highlight);
+    z-index: 999;
 }
