@@ -14,6 +14,18 @@
     --primary-act: hsl(203, 47%, 52%);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     margin: 0;
     padding: 50px;
@@ -33,7 +45,7 @@ button{
     color: var(--text);
     background-color: var(--bg-light);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -55,7 +67,7 @@ button:active {
     padding: 20px;
     background-image: var(--gradient);
     font-size: 16px;
-    border-radius: 40px;
+    border-radius: 15px;
     border: 1px solid;
     border-color: var(--border);
     border-top-color: var(--highlight);
@@ -94,11 +106,15 @@ header {
     display: flex;
     justify-content: center;
     font-size: 24px;
-    border-radius: 40px;
-    background-image: var(--gradient-hover);
+    border-radius: 15px;
+    background-image: var(--gradient);
     border: 1px solid;
     border-color: var(--border);
     border-top-color: var(--highlight);
+}
+
+.header:hover {
+    background-image: var(--gradient-hover);
 }
 
 header h1 {
@@ -180,9 +196,19 @@ header button {
     padding: 20px;
     background-image: var(--gradient-hover);
     font-size: 16px;
-    border-radius: 40px;
+    border-radius: 15px;
     border: 1px solid;
     border-color: var(--border);
     border-top-color: var(--highlight);
     z-index: 999;
+}
+
+input {
+    border: 1px solid;
+    border-color: var(--border);
+    background-color: var(--bg-light);
+    color: var(--text);
+    min-width: 100px;
+    min-height: 30px;
+    border-radius: 5px;
 }
